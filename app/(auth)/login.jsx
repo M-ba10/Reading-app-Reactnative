@@ -1,11 +1,10 @@
-import { StyleSheet, Pressable, Text } from 'react-native'
+import { StyleSheet, Pressable, Text, TextInput } from 'react-native'
 import { Link } from 'expo-router'
 
 // themed components
 import ThemedView from '../../components/ThemedView'
 import Spacer from '../../components/Spacer'
 import ThemedText from '../../components/ThemedText'
-import { Colors } from '../../constants/Colors'
 import ThemedButton from '../../components/ThemedButton'
 
 
@@ -25,6 +24,8 @@ const login = () => {
          Login to Your Account
       </ThemedText>
       
+      <TextInput placeholder='Email'/>
+
       {/* <Pressable 
           onPress={handleSubmit}
          style={({ pressed }) => [styles.btn, pressed && styles.pressed]}>

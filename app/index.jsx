@@ -23,9 +23,11 @@ const Home = () => {
       <Link href='/login' style={{ marginVertical: 10, marginBottomWidth: 1, backgroundColor: 'primary', fontWeight: 'condensed'}}>
         <ThemedText>Login Page</ThemedText>
       </Link>
-
       <Link href='/register' style={{ marginVertical: 10, marginBottomWidth: 1, backgroundColor: 'primary', fontWeight: 'condensed'}}>
         <ThemedText>Register Page</ThemedText>
+      </Link>
+      <Link href='/profile' style={{ marginVertical: 10, marginBottomWidth: 1, backgroundColor: 'primary', fontWeight: 'condensed'}}>
+        <ThemedText>Profile Page</ThemedText>
       </Link>
       
     </ThemedView>
