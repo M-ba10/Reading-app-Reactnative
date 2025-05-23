@@ -3,7 +3,7 @@ import { Colors } from '../constants/Colors'
 import { useSafeAreaInsets } from 'react-native-safe-area-context'
 
 
-const ThemedView = ({ style, ...props }) => {
+const ThemedView = ({ style, safe=true, ...props}) => {
   const colorScheme = useColorScheme()
   const theme = Colors[colorScheme] ?? Colors.light // default to light theme
 

@@ -2,12 +2,13 @@ import { StyleSheet,  useColorScheme } from 'react-native'
 import { Slot, Stack } from 'expo-router'
 import {Colors} from '../constants/Colors'
 import { StatusBar } from 'expo-status-bar'
+import { UserProvider } from '../contexts/UserContext'
 
 const RootLayout = () => {
   const colorSheme = useColorScheme () 
   const theme = Colors[colorSheme] ?? Colors.light // default to light theme
   return (
-    <>
+    <UserProvider>
       <StatusBar value='auto'/>
       <Stack screenOptions={{
         headerStyle: {
@@ -24,7 +25,7 @@ const RootLayout = () => {
         
       </Stack>
 
-    </>
+    </UserProvider>
   )
 }
 
